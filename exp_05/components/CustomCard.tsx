@@ -1,20 +1,46 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  ViewProps,
+} from 'react-native';
 
-export default function CustomCard({children}: any) {
+interface CustomCardProps extends ViewProps {
+  children: React.ReactNode;
+}
+
+const CustomCard: React.FC<CustomCardProps> = ({
+  children,
+  style,
+  ...props
+}) => {
   return (
-    <View style={styles.card}>
+    <View
+      {...props}
+      style={[styles.card, style]}
+    >
       {children}
     </View>
   );
-}
+};
+
+export default CustomCard;
 
 const styles = StyleSheet.create({
   card: {
-    margin: 15,
-    padding: 20,
-    backgroundColor: 'white',
-    borderRadius: 10,
-    elevation: 5,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 14,
+    padding: 15,
+    marginBottom: 15,
+
+    elevation: 4,
+
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
   },
 });

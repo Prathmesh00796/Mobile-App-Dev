@@ -1,37 +1,64 @@
 import React from 'react';
-import {View, Text, TextInput, StyleSheet} from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  StyleSheet,
+} from 'react-native';
 
-export default function CustomInput({
+interface CustomInputProps {
+  label: string;
+  value: string;
+  onChangeText: (text: string) => void;
+  placeholder?: string;
+}
+
+const CustomInput: React.FC<CustomInputProps> = ({
   label,
   value,
   onChangeText,
   placeholder,
-}: any) {
+}) => {
   return (
-    <View>
-      <Text style={styles.label}>{label}</Text>
+    <View style={styles.container}>
+
+      <Text style={styles.label}>
+        {label}
+      </Text>
 
       <TextInput
-        style={styles.input}
-        placeholder={placeholder}
         value={value}
         onChangeText={onChangeText}
+        placeholder={placeholder}
+        placeholderTextColor="#9CA3AF"
+        style={styles.input}
       />
+
     </View>
   );
-}
+};
+
+export default CustomInput;
 
 const styles = StyleSheet.create({
+  container: {
+    marginBottom: 15,
+  },
+
   label: {
-    fontWeight: 'bold',
-    marginBottom: 5,
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#374151',
+    marginBottom: 6,
   },
 
   input: {
+    height: 47,
     borderWidth: 1,
-    borderColor: 'gray',
-    padding: 12,
-    borderRadius: 8,
-    marginBottom: 15,
+    borderColor: '#D1D5DB',
+    borderRadius: 9,
+    paddingHorizontal: 12,
+    fontSize: 15,
+    color: '#111827',
   },
 });

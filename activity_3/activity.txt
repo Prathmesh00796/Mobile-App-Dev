@@ -1,0 +1,33 @@
+ReactNative supports core component like view,text,button,image,textinput
+as well as important core components like stylesheet ,
+scrollview,flatlist,flexbox.
+view component : it is like a container everything goes inside this tag
+i.e text
+text "" : it is used to display the text.
+stylesheet component : react native does not support css file instead we
+use the stylesheet component .
+scrollview component : scrollview renders everything at once .And it is
+used for the small type of data eg : terms and condition page , about us
+page , profile page .
+FlatList component : loads only visible item . best for large data eg :
+WhatsApp,instagram,amazon.
+we can store or use the srcollview to store the 50000 images but it will
+reduces the performance instead we use the flatList component .
+diff between scrollview and flatlist component.
+questions :
+create a student card by using all the components .
+Activities:
+2 create a fruit list using flatList.
+3 create about page for college with 10 paragraphs using scrollviews .
+4 menu cards arrange with flexbox
+5 responsive
+oral question : why to we use view component ?
+diff between text and view
+what is a stylesheet ?
+why we use flexbox ?
+what is default flex direction ? diff between justify content
+and align item
+what is flex ? when do we use scrollview and when do we use
+flatList ?
+why flatList is faster ? what makes UI responsive ?
+why avoid inline styles?

@@ -1,0 +1,25 @@
+EXP 1: ACTIVITY 1 : what is react native ?
+ what is diff between react and react native?
+ where react native is used in company levels ?
+ what is chocolatey ? why we use chocolatey in installement?
+ what is JDK17 ? and we used in installement?
+ what is android SDK ?
+EXP2 : ACTIVITY 2: which command we need to enter for creating react native application?
+ what is the purpose of android folder ?
+ why ISO Folder present in your application?
+ which file represent main screes?
+ diff between package.json and package_lock.json?
+ use of node module folder?
+ which file is he entry file of your application?
+ what is metro builder nd use of metrobuilder?
+ which command is used to run the application on android ?
+ how to verify that physical devies are connected ?
+ what is the purpose of USB debugging?
+ how do we testing on emulator and physical devices?
+PRACTICAL ACTIVITIES : display message on mobile "Welcome to the react native application ,
+samruddhi "
+ change text colour and text style
+ change background colour .
+ create a login page , create a simple student card with name , roll no , dpt
+and image .
+ create a simple counter UI 
